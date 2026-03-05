@@ -1,0 +1,13 @@
+name: napari-ome-tiff-reader
+display_name: OME-TIFF Reader
+contributions:
+  commands:
+    - id: napari-ome-tiff-reader.get_reader
+      python_name: napari_ome_tiff_reader:napari_get_reader
+      title: Open OME-TIFF
+  readers:
+    - command: napari-ome-tiff-reader.get_reader
+      accepts_directories: false
+      filename_patterns:
+        - "*.tif"
+        - "*.tiff"

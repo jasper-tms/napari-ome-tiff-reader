@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "napari-ome-tiff-reader"
+version = "0.1.0"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+napari_ome_tiff_reader = ["napari.yaml"]
+
+[project.entry-points."napari.manifest"]
+napari-ome-tiff-reader = "napari_ome_tiff_reader:napari.yaml"
